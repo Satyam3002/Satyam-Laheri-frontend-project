@@ -17,24 +17,19 @@ export default function Navbar() {
             {isMobileMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
           </button>
         </div>
-        <div
-          className={`lg:flex gap-x-8 border rounded-full px-4 py-1 ${
-            isMobileMenuOpen ? "block" : "hidden"
-          } lg:flex`}
-        >
-          <div className="hidden lg:flex items-center gap-x-8 px-8 lg:px-0 border lg:border-0 rounded-full">
-            <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
-              Menu Item
-            </div>
-            <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
-              Menu Item
-            </div>
-            <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
-              Menu Item
-            </div>
-            <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
-              Menu Item
-            </div>
+        {/* Menu Items for Desktop */}
+        <div className="hidden lg:flex items-center gap-x-8 border rounded-full px-4 py-1">
+          <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
+            Menu Item
+          </div>
+          <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
+            Menu Item
+          </div>
+          <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
+            Menu Item
+          </div>
+          <div className="hover:bg-gray-700 rounded-full px-4 py-2 cursor-pointer">
+            Menu Item
           </div>
         </div>
       </div>
@@ -55,6 +50,7 @@ export default function Navbar() {
           <button className="self-end mb-6" onClick={toggleMobileMenu}>
             <FiX size={28} />
           </button>
+          {/* Mobile Menu Items */}
           <div className="hover:bg-gray-700 w-full text-left rounded-full px-4 py-2 cursor-pointer">
             Menu Item
           </div>
@@ -68,7 +64,7 @@ export default function Navbar() {
             Menu Item
           </div>
 
-          <button className=" bg-blue-700 text-white flex items-center  gap-x-4 py-2 px-4 rounded-full border border-black">
+          <button className="bg-blue-700 text-white flex items-center gap-x-4 py-2 px-4 rounded-full border border-black">
             <p>Start a Project</p>
             <img src="./arrow.png" alt="" />
           </button>

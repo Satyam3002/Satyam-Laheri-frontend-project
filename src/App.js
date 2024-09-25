@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Testimonial from './components/Testimonials';
 import Projects from './components/Projects';
 import Leader from './components/leader';
+import Service from './components/Services';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Hero1 />
         <Hero2 />
         <Projects />
+        <Service />
         <Leader />
         <Testimonial />
         <Footer />
