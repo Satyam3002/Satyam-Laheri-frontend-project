@@ -8,6 +8,7 @@ import Testimonial from './components/Testimonials';
 import Projects from './components/Projects';
 import Leader from './components/leader';
 import Service from './components/Services';
+import Bottom from './components/Bottom';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Leader />
         <Testimonial />
         <Footer />
+        <Bottom />
         
     </div>
   );
